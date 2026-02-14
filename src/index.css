@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App Background */
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    min-height: 100vh;
+    color: white;
+    font-family: Inter, sans-serif;
+}
+/* Shared Glass Card Style */
+.card-glass {
+    @apply bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-6 text-center transition duration-300 hover:scale-105;
+    box-shadow: 0 10px 40px rgba(139, 92, 246, 0.25);
+}
+
+.card-glass:hover {
+    box-shadow: 0 10px 60px rgba(139, 92, 246, 0.45);
+}
+
+.icon-wrapper {
+    @apply flex justify-center mb-4 text-purple-400;
+}
+
+.card-title {
+    @apply text-lg font-semibold mb-2;
+}
+
+.card-desc {
+    @apply text-white/60 text-sm;
+}
