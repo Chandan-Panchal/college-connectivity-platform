@@ -1,8 +1,9 @@
 import { Bell } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function UpdatesCard() {
     return (
-        <div className="card-glass">
+        <Link to="/notifications" className="card-glass hover:border-purple-500/50 transition cursor-pointer block">
             <div className="icon-wrapper">
                 <Bell size={26} />
             </div>
@@ -11,6 +12,6 @@ export default function UpdatesCard() {
             <p className="card-desc">
                 Stay informed with announcements and important alerts.
             </p>
-        </div>
+        </Link>
     );
 }

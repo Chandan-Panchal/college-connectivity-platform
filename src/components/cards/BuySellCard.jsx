@@ -1,8 +1,9 @@
 import { ShoppingCart } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function BuySellCard() {
     return (
-        <div className="card-glass">
+        <Link to="/buy-sell" className="card-glass block">
             <div className="icon-wrapper">
                 <ShoppingCart size={26} />
             </div>
@@ -11,6 +12,6 @@ export default function BuySellCard() {
             <p className="card-desc">
                 Trade books and essentials within your campus.
             </p>
-        </div>
+        </Link>
     );
 }

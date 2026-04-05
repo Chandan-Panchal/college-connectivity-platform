@@ -1,8 +1,9 @@
 import { BookOpen } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function ResourcesCard() {
     return (
-        <div className="card-glass">
+        <Link to="/resources" className="card-glass block hover:scale-105 transition-transform cursor-pointer">
             <div className="icon-wrapper">
                 <BookOpen size={26} />
             </div>
@@ -11,6 +12,6 @@ export default function ResourcesCard() {
             <p className="card-desc">
                 Access notes, study materials and previous year papers.
             </p>
-        </div>
+        </Link>
     );
 }

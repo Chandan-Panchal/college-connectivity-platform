@@ -1,8 +1,9 @@
 import { Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function ClubsCommunitiesCard() {
     return (
-        <div className="card-glass">
+        <Link to="/clubs" className="card-glass block">
             <div className="icon-wrapper">
                 <Users size={26} />
             </div>
@@ -11,6 +12,6 @@ export default function ClubsCommunitiesCard() {
             <p className="card-desc">
                 Join student groups and stay connected with activities.
             </p>
-        </div>
+        </Link>
     );
 }
